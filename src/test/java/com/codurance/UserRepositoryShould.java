@@ -9,7 +9,7 @@ import static org.mockito.Mockito.verify;
  * Created by tobyretallick on 12/09/2014.
  */
 public class UserRepositoryShould {
-    private static final User NEW_USER = new User("toby");
+    private static final User NEW_USER = new User("toby", "retallick");
     private Validation validation;
 
     @Test public void

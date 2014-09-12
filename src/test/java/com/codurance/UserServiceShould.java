@@ -6,7 +6,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
 public class UserServiceShould {
-    private static final User NEW_USER = new User("toby");
+    private static final User NEW_USER = new User("toby", "retallick");
     private UserService userService;
     private Repository repository;
 

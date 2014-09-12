@@ -6,6 +6,10 @@ package com.codurance;
 public class UserValidation implements Validation {
     @Override
     public boolean checkName(User newUser) {
-        return newUser.getName() == "" ? false : true;
+        if (newUser.getFirstName().equals("") || newUser.getLastName().equals("")) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }
