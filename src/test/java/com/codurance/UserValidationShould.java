@@ -11,15 +11,14 @@ import static org.junit.Assert.assertThat;
 public class UserValidationShould {
 
     private final User VALID_USER_NAME = new User("toby", "retallick");
-    private UserValidation userValidation;
+    private UserNameValidation userValidation;
     private User INVALID_USER_FIRST_NAME = new User("", "retallick");
     private User INVALID_USER_LAST_NAME = new User("toby", "retallick");
 
     @Test public void
     validate_user_name() {
-        userValidation = new UserValidation();
+        userValidation = new UserNameValidation();
         assertThat(userValidation.checkName(VALID_USER_NAME), is(true));
         assertThat(userValidation.checkName(INVALID_USER_FIRST_NAME), is(false));
-
     }
 }
